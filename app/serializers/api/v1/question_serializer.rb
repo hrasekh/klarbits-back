@@ -1,13 +1,29 @@
 class Api::V1::QuestionSerializer < ActiveModel::Serializer
-  attributes :uuid, :content, :next_question, :previous_question
+  attributes :uuid, :content, :next_question, :previous_question, :answers
 
   def next_question
-    next_question_obj = object.category.questions.where('id > ?', object.id).order(id: :asc).first
-    Api::V1::SimplifiedQuestionSerializer.new(next_question_obj).as_json if next_question_obj
+    serialize_question(next_question_object)
   end
 
   def previous_question
-    previous_question_obj = object.category.questions.where(id: ...object.id).order(id: :desc).first
-    Api::V1::SimplifiedQuestionSerializer.new(previous_question_obj).as_json if previous_question_obj
+    serialize_question(previous_question_object)
+  end
+
+  def answers
+    object.answers.map { |answer| Api::V1::AnswerSerializer.new(answer).as_json }
+  end
+
+  private
+
+  def next_question_object
+    object.category.questions.where('id > ?', object.id).order(id: :asc).first
+  end
+
+  def previous_question_object
+    object.category.questions.where(id: ...object.id).order(id: :desc).first
+  end
+
+  def serialize_question(question)
+    Api::V1::SimplifiedQuestionSerializer.new(question).as_json if question
   end
 end
