@@ -8,7 +8,7 @@ class Api::V1::QuestionsController < ApplicationController
   private
 
   def load_question
-    @question = Question.find_by(params[:uuid])
+    @question = Question.find_by(uuid: params[:uuid])
     return if @question
 
     render json: { error: 'Question not found' }, status: :not_found
