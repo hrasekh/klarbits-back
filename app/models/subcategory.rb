@@ -2,12 +2,11 @@ class Subcategory < ApplicationRecord
   belongs_to :category
   has_many :questions, dependent: :nullify
   validates :name, presence: true
-  validates :category, presence: true
   validates :slug, presence: true
 
   before_validation :generate_slug
 
-  def self.find_by_uuid(uuid) 
+  def self.find_by_uuid(uuid)
     find_by(uuid: uuid)
   end
 

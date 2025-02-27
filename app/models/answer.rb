@@ -5,9 +5,8 @@ class Answer < ApplicationRecord
   private
 
   def question_has_one_correct_answer
-    return if self.question.answers.select(&:is_correct).count <= 1
+    return if question.answers.count(&:is_correct) <= 1
 
-    errors.add(:question, "must have exactly one correct answer")
+    errors.add(:question, 'must have exactly one correct answer')
   end
-
 end

@@ -6,7 +6,7 @@ class Category < ApplicationRecord
 
   before_validation :generate_slug
 
-  def self.find_by_uuid(uuid) 
+  def self.find_by_uuid(uuid)
     find_by(uuid: uuid)
   end
 

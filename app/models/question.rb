@@ -3,8 +3,7 @@ class Question < ApplicationRecord
   belongs_to :subcategory, optional: true
   has_many :answers, dependent: :destroy
   validates :content, presence: true
-  validates :category, presence: true
-  validates :uuid, presence: true, uniqueness: true 
+  validates :uuid, presence: true, uniqueness: true
   validate :category_matches_subcategory
 
   before_validation :generate_uuid
@@ -16,13 +15,12 @@ class Question < ApplicationRecord
   private
 
   def generate_uuid
-    self.uuid = SecureRandom.uuid if uuid.blank? 
+    self.uuid = SecureRandom.uuid if uuid.blank?
   end
 
   def category_matches_subcategory
-    if subcategory && category != subcategory.category
-      errors.add(:subcategory, "must belong to the same category as the question")
-    end
-  end
+    return unless subcategory && category != subcategory.category
 
+    errors.add(:subcategory, 'must belong to the same category as the question')
+  end
 end
