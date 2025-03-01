@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_02_27_191743) do
+ActiveRecord::Schema[7.2].define(version: 2025_03_01_091845) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "answer_translations", force: :cascade do |t|
+    t.bigint "answer_id", null: false
+    t.string "locale", null: false
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["answer_id", "locale"], name: "index_answer_translations_on_answer_id_and_locale", unique: true
+    t.index ["answer_id"], name: "index_answer_translations_on_answer_id"
+  end
 
   create_table "answers", force: :cascade do |t|
     t.text "answer", null: false
@@ -30,6 +40,16 @@ ActiveRecord::Schema[7.2].define(version: 2025_02_27_191743) do
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_categories_on_name", unique: true
     t.index ["slug"], name: "index_categories_on_slug", unique: true
+  end
+
+  create_table "question_translations", force: :cascade do |t|
+    t.bigint "question_id", null: false
+    t.string "locale", null: false
+    t.text "content", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["question_id", "locale"], name: "index_question_translations_on_question_id_and_locale", unique: true
+    t.index ["question_id"], name: "index_question_translations_on_question_id"
   end
 
   create_table "questions", force: :cascade do |t|
@@ -55,7 +75,9 @@ ActiveRecord::Schema[7.2].define(version: 2025_02_27_191743) do
     t.index ["slug"], name: "index_subcategories_on_slug", unique: true
   end
 
+  add_foreign_key "answer_translations", "answers"
   add_foreign_key "answers", "questions"
+  add_foreign_key "question_translations", "questions"
   add_foreign_key "questions", "categories"
   add_foreign_key "questions", "subcategories"
   add_foreign_key "subcategories", "categories"

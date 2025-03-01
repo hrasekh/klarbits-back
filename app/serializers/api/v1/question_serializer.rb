@@ -1,5 +1,6 @@
 class Api::V1::QuestionSerializer < ActiveModel::Serializer
-  attributes :uuid, :title, :question, :next_question, :previous_question, :answers
+  attributes :uuid, :title, :question, :translation, :next_question, :previous_question, :answers,
+             :statistic
 
   def next_question
     serialize_question(next_question_object)
@@ -10,7 +11,20 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
   end
 
   def answers
-    object.answers.map { |answer| Api::V1::AnswerSerializer.new(answer).as_json }
+    object.answers.map do |answer|
+      Api::V1::AnswerSerializer.new(answer).as_json
+    end
+  end
+
+  def statistic
+    {
+      total: object.category.questions.count,
+      current: object.category.questions.index(object) + 1
+    }
+  end
+
+  def translation
+    object.translated_question(Current.locale)
   end
 
   private

@@ -1,6 +1,7 @@
 require_relative "boot"
 
 require "rails/all"
+require_relative '../app/middleware/set_locale'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -28,5 +29,9 @@ module Iteacher
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    
+    config.i18n.available_locales = [:en, :tr, :fa, :ar]
+    config.i18n.default_locale = :en
+    config.middleware.insert_before(Rack::Runtime, SetLocale)
   end
 end

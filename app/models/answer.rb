@@ -3,6 +3,11 @@ class Answer < ApplicationRecord
   validate :question_has_one_correct_answer
   validates :answer, presence: true
   validates :is_correct, inclusion: { in: [true, false] }
+  has_many :answer_translations, dependent: :destroy
+
+  def translated_answer(locale)
+    answer_translations.find_by(locale: locale)&.content || answer
+  end
 
   private
 

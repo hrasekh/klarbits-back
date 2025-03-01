@@ -1,7 +1,7 @@
 class Subcategory < ApplicationRecord
+  validates :name, presence: true
   belongs_to :category
   has_many :questions, dependent: :nullify
-  validates :name, presence: true
   validates :slug, presence: true
 
   before_validation :generate_slug

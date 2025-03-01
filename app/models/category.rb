@@ -1,7 +1,7 @@
 class Category < ApplicationRecord
+  validates :name, presence: true, uniqueness: true
   has_many :questions, dependent: :destroy
   has_many :subcategories, dependent: :destroy
-  validates :name, presence: true, uniqueness: true
   validates :slug, presence: true, uniqueness: true
 
   before_validation :generate_slug

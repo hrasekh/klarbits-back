@@ -2,7 +2,7 @@ class Api::V1::QuestionsController < ApplicationController
   before_action :load_question, only: [:show]
 
   def show
-    render json: @question
+    render json: @question, locale: params[:locale]
   end
 
   private
@@ -13,5 +13,4 @@ class Api::V1::QuestionsController < ApplicationController
 
     render json: { error: 'Question not found' }, status: :not_found
   end
-
 end

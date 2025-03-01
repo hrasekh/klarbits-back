@@ -2,18 +2,22 @@ class Question < ApplicationRecord
   belongs_to :category
   belongs_to :subcategory, optional: true
   has_many :answers, dependent: :destroy
+  has_many :question_translations, dependent: :destroy
+
   validates :title, presence: true
   validates :question, presence: true
   validates :uuid, presence: true, uniqueness: true
   validate :category_matches_subcategory
-  validates :category, presence: true
   validates :subcategory, presence: true
-  
 
   before_validation :generate_uuid
 
   def self.find_by_uuid(uuid)
     find_by(uuid: uuid)
+  end
+
+  def translated_question(locale)
+    question_translations.find_by(locale: locale)&.content || question
   end
 
   private
