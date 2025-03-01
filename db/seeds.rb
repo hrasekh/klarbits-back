@@ -112,7 +112,7 @@ questions = [
         ar: "المحاكم هي التي تصنع القوانين."
       } }
   ]
-},
+  },
   {
     title: "Aufgabe 4",
     question: "Welches Recht gehört zu den Grundrechten in Deutschland?",
