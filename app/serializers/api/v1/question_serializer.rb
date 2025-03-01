@@ -1,5 +1,5 @@
 class Api::V1::QuestionSerializer < ActiveModel::Serializer
-  attributes :uuid, :content, :next_question, :previous_question, :answers
+  attributes :uuid, :title, :question, :next_question, :previous_question, :answers
 
   def next_question
     serialize_question(next_question_object)

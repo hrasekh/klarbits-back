@@ -14,7 +14,4 @@ class Api::V1::QuestionsController < ApplicationController
     render json: { error: 'Question not found' }, status: :not_found
   end
 
-  def question_params
-    params.require(:question).permit(:content, :category_id, :subcategory_id)
-  end
 end

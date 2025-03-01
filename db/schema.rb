@@ -15,7 +15,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_02_27_191743) do
   enable_extension "plpgsql"
 
   create_table "answers", force: :cascade do |t|
-    t.text "content", null: false
+    t.text "answer", null: false
     t.bigint "question_id", null: false
     t.boolean "is_correct", default: false, null: false
     t.datetime "created_at", null: false
@@ -33,7 +33,8 @@ ActiveRecord::Schema[7.2].define(version: 2025_02_27_191743) do
   end
 
   create_table "questions", force: :cascade do |t|
-    t.text "content", null: false
+    t.string "title", null: false
+    t.text "question", null: false
     t.uuid "uuid", null: false
     t.bigint "category_id", null: false
     t.bigint "subcategory_id", null: false

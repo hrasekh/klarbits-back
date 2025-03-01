@@ -2,9 +2,13 @@ class Question < ApplicationRecord
   belongs_to :category
   belongs_to :subcategory, optional: true
   has_many :answers, dependent: :destroy
-  validates :content, presence: true
+  validates :title, presence: true
+  validates :question, presence: true
   validates :uuid, presence: true, uniqueness: true
   validate :category_matches_subcategory
+  validates :category, presence: true
+  validates :subcategory, presence: true
+  
 
   before_validation :generate_uuid
 

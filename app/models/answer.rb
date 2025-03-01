@@ -1,6 +1,8 @@
 class Answer < ApplicationRecord
   belongs_to :question
   validate :question_has_one_correct_answer
+  validates :answer, presence: true
+  validates :is_correct, inclusion: { in: [true, false] }
 
   private
 

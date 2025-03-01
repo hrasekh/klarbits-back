@@ -1,3 +1,3 @@
 class Api::V1::AnswerSerializer < ActiveModel::Serializer
-  attributes :id, :content, :is_correct
+  attributes :id, :answer, :is_correct
 end
