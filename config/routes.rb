@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   
   namespace :api do
     namespace :v1 do
+      resources :home, only: [:index]
       resources :questions, param: :uuid
 
       resources :categories, param: :slug do
