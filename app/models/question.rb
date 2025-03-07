@@ -1,14 +1,12 @@
 class Question < ApplicationRecord
   belongs_to :category
-  belongs_to :subcategory, optional: true
+  belongs_to :subcategory
   has_many :answers, dependent: :destroy
   has_many :question_translations, dependent: :destroy
-
   validates :title, presence: true
   validates :question, presence: true
   validates :uuid, presence: true, uniqueness: true
   validate :category_matches_subcategory
-  validates :subcategory, presence: true
 
   before_validation :generate_uuid
 

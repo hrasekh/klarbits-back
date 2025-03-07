@@ -1,0 +1,2350 @@
+[
+    {
+        "title": "Aufgabe 1",
+        "question": "In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil …",
+        "translations": {
+            "en": "In Germany, people are allowed to openly speak against the government because …",
+            "fa": "در آلمان، مردم اجازه دارند آزادانه علیه دولت صحبت کنند زیرا …",
+            "tr": "Almanya'da insanlar hükümete karşı açıkça konuşabilir çünkü …",
+            "ar": "في ألمانيا، يُسمح للناس بالتحدث علانية ضد الحكومة لأن …"
+        },
+        "answers": [
+            {
+                "answer": "hier Religionsfreiheit gilt.",
+                "is_correct": false,
+                "translations": {
+                    "en": "there is freedom of religion here.",
+                    "fa": "در اینجا آزادی دین وجود دارد.",
+                    "tr": "burada din özgürlüğü var.",
+                    "ar": "هنا توجد حرية دينية."
+                }
+            },
+            {
+                "answer": "die Menschen Steuern zahlen.",
+                "is_correct": false,
+                "translations": {
+                    "en": "people pay taxes.",
+                    "fa": "مردم مالیات پرداخت می‌کنند.",
+                    "tr": "insanlar vergi ödüyor.",
+                    "ar": "يدفع الناس الضرائب."
+                }
+            },
+            {
+                "answer": "die Menschen das Wahlrecht haben.",
+                "is_correct": false,
+                "translations": {
+                    "en": "people have the right to vote.",
+                    "fa": "مردم حق رأی دارند.",
+                    "tr": "insanların oy kullanma hakkı var.",
+                    "ar": "لدى الناس حق التصويت."
+                }
+            },
+            {
+                "answer": "hier Meinungsfreiheit gilt.",
+                "is_correct": true,
+                "translations": {
+                    "en": "there is freedom of speech here.",
+                    "fa": "در اینجا آزادی بیان وجود دارد.",
+                    "tr": "burada ifade özgürlüğü var.",
+                    "ar": "هنا توجد حرية التعبير."
+                }
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 2",
+        "question": "In Deutschland können Eltern bis zum 14. Lebensjahr ihres Kindes entscheiden, ob es in der Schule am …",
+        "translations": {
+            "en": "In Germany, parents can decide until their child is 14 years old whether they participate in …",
+            "fa": "در آلمان، والدین تا سن ۱۴ سالگی فرزندشان می‌توانند تصمیم بگیرند که آیا او در … شرکت کند.",
+            "tr": "Almanya'da ebeveynler, çocukları 14 yaşına gelene kadar onun … katılıp katılmayacağına karar verebilir.",
+            "ar": "في ألمانيا، يمكن للوالدين أن يقرروا حتى يبلغ طفلهم 14 عامًا ما إذا كان سيشارك في …"
+        },
+        "answers": [
+            {
+                "answer": "Geschichtsunterricht teilnimmt.",
+                "is_correct": false,
+                "translations": {
+                    "en": "history class.",
+                    "fa": "کلاس تاریخ.",
+                    "tr": "tarih dersi.",
+                    "ar": "حصة التاريخ."
+                }
+            },
+            {
+                "answer": "Religionsunterricht teilnimmt.",
+                "is_correct": true,
+                "translations": {
+                    "en": "religious education.",
+                    "fa": "آموزش دینی.",
+                    "tr": "din eğitimi.",
+                    "ar": "التعليم الديني."
+                }
+            },
+            {
+                "answer": "Politikunterricht teilnimmt.",
+                "is_correct": false,
+                "translations": {
+                    "en": "politics class.",
+                    "fa": "کلاس سیاست.",
+                    "tr": "siyaset dersi.",
+                    "ar": "حصة السياسة."
+                }
+            },
+            {
+                "answer": "Sprachunterricht teilnimmt.",
+                "is_correct": false,
+                "translations": {
+                    "en": "language class.",
+                    "fa": "کلاس زبان.",
+                    "tr": "dil dersi.",
+                    "ar": "حصة اللغة."
+                }
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 3",
+        "question": "Deutschland ist ein Rechtsstaat. Was ist damit gemeint?",
+        "answers": [
+            {
+                "answer": "Alle Einwohnerinnen/Einwohner und der Staat müssen sich an die Gesetze halten.",
+                "is_correct": true
+            },
+            {
+                "answer": "Der Staat muss sich nicht an die Gesetze halten.",
+                "is_correct": false
+            },
+            {
+                "answer": "Nur Deutsche müssen die Gesetze befolgen.",
+                "is_correct": false
+            },
+            {
+                "answer": "Die Gerichte machen die Gesetze.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 4",
+        "question": "Welches Recht gehört zu den Grundrechten in Deutschland?",
+        "answers": [
+            {
+                "answer": "Waffenbesitz",
+                "is_correct": false
+            },
+            {
+                "answer": "Faustrecht",
+                "is_correct": false
+            },
+            {
+                "answer": "Meinungsfreiheit",
+                "is_correct": true
+            },
+            {
+                "answer": "Selbstjustiz",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 5",
+        "question": "Wahlen in Deutschland sind frei. Was bedeutet das?",
+        "answers": [
+            {
+                "answer": "Man darf Geld annehmen, wenn man dafür eine bestimmte Kandidatin/einen bestimmten Kandidaten wählt.",
+                "is_correct": false
+            },
+            {
+                "answer": "Nur Personen, die noch nie im Gefängnis waren, dürfen wählen.",
+                "is_correct": false
+            },
+            {
+                "answer": "Die Wählerin/der Wähler darf bei der Wahl weder beeinflusst noch zu einer bestimmten Stimmabgabe gezwungen werden und keine Nachteile durch die Wahl haben.",
+                "is_correct": true
+            },
+            {
+                "answer": "Alle wahlberechtigten Personen müssen wählen.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 6",
+        "question": "Wie heißt die deutsche Verfassung?",
+        "answers": [
+            {
+                "answer": "Volksgesetz",
+                "is_correct": false
+            },
+            {
+                "answer": "Bundesgesetz",
+                "is_correct": false
+            },
+            {
+                "answer": "Deutsches Gesetz",
+                "is_correct": false
+            },
+            {
+                "answer": "Grundgesetz",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 7",
+        "question": "Welches Recht gehört zu den Grundrechten, die nach der deutschen Verfassung garantiert werden? Das Recht auf ...",
+        "answers": [
+            {
+                "answer": "Glaubens- und Gewissensfreiheit",
+                "is_correct": true
+            },
+            {
+                "answer": "Unterhaltung",
+                "is_correct": false
+            },
+            {
+                "answer": "Arbeit",
+                "is_correct": false
+            },
+            {
+                "answer": "Wohnung",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 8",
+        "question": "Was steht nicht im Grundgesetz von Deutschland?",
+        "answers": [
+            {
+                "answer": "Die Würde des Menschen ist unantastbar.",
+                "is_correct": false
+            },
+            {
+                "answer": "Alle sollen gleich viel Geld haben.",
+                "is_correct": true
+            },
+            {
+                "answer": "Jeder Mensch darf seine Meinung sagen.",
+                "is_correct": false
+            },
+            {
+                "answer": "Alle sind vor dem Gesetz gleich.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 9",
+        "question": "Welches Grundrecht gilt in Deutschland nur für Ausländerinnen/Ausländer? Das Grundrecht auf ...",
+        "answers": [
+            {
+                "answer": "Schutz der Familie",
+                "is_correct": false
+            },
+            {
+                "answer": "Menschenwürde",
+                "is_correct": false
+            },
+            {
+                "answer": "Asyl",
+                "is_correct": true
+            },
+            {
+                "answer": "Meinungsfreiheit",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 10",
+        "question": "Was ist mit dem deutschen Grundgesetz vereinbar?",
+        "answers": [
+            {
+                "answer": "die Prügelstrafe",
+                "is_correct": false
+            },
+            {
+                "answer": "die Folter",
+                "is_correct": false
+            },
+            {
+                "answer": "die Todesstrafe",
+                "is_correct": false
+            },
+            {
+                "answer": "die Geldstrafe",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 11",
+        "question": "Wie wird die Verfassung der Bundesrepublik Deutschland genannt?",
+        "answers": [
+            {
+                "answer": "Grundgesetz",
+                "is_correct": true
+            },
+            {
+                "answer": "Bundesverfassung",
+                "is_correct": false
+            },
+            {
+                "answer": "Gesetzbuch",
+                "is_correct": false
+            },
+            {
+                "answer": "Verfassungsvertrag",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 12",
+        "question": "Eine Partei im Deutschen Bundestag will die Pressefreiheit abschaffen. Ist das möglich?",
+        "answers": [
+            {
+                "answer": "Ja, wenn mehr als die Hälfte der Abgeordneten im Bundestag dafür sind.",
+                "is_correct": false
+            },
+            {
+                "answer": "Ja, aber dazu müssen zwei Drittel der Abgeordneten im Bundestag dafür sein.",
+                "is_correct": false
+            },
+            {
+                "answer": "Nein, denn die Pressefreiheit ist ein Grundrecht. Sie kann nicht abgeschafft werden.",
+                "is_correct": true
+            },
+            {
+                "answer": "Nein, denn nur der Bundesrat kann die Pressefreiheit abschaffen.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 13",
+        "question": "Im Parlament steht der Begriff \"Opposition\" für ...",
+        "answers": [
+            {
+                "answer": "die regierenden Parteien.",
+                "is_correct": false
+            },
+            {
+                "answer": "die Fraktion mit den meisten Abgeordneten.",
+                "is_correct": false
+            },
+            {
+                "answer": "alle Parteien, die bei der letzten Wahl die 5%-Hürde erreichen konnten.",
+                "is_correct": false
+            },
+            {
+                "answer": "alle Abgeordneten, die nicht zu der Regierungspartei/den Regierungsparteien gehören.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 14",
+        "question": "Meinungsfreiheit in Deutschland heißt, dass ich ...",
+        "answers": [
+            {
+                "answer": "Passanten auf der Straße beschimpfen darf.",
+                "is_correct": false
+            },
+            {
+                "answer": "meine Meinung in Leserbriefen äußern kann.",
+                "is_correct": true
+            },
+            {
+                "answer": "Nazi-, Hamas- oder Islamischer Staat-Symbole öffentlich tragen darf.",
+                "is_correct": false
+            },
+            {
+                "answer": "meine Meinung nur dann äußern darf, solange ich der Regierung nicht widerspreche.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 15",
+        "question": "Was verbietet das deutsche Grundgesetz?",
+        "answers": [
+            {
+                "answer": "Militärdienst",
+                "is_correct": false
+            },
+            {
+                "answer": "Zwangsarbeit",
+                "is_correct": true
+            },
+            {
+                "answer": "freie Berufswahl",
+                "is_correct": false
+            },
+            {
+                "answer": "Arbeit im Ausland",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 16",
+        "question": "Wann ist die Meinungsfreiheit in Deutschland eingeschränkt?",
+        "answers": [
+            {
+                "answer": "bei der öffentlichen Verbreitung falscher Behauptungen über einzelne Personen",
+                "is_correct": true
+            },
+            {
+                "answer": "bei Meinungsäußerungen über die Bundesregierung",
+                "is_correct": false
+            },
+            {
+                "answer": "bei Diskussionen über Religionen",
+                "is_correct": false
+            },
+            {
+                "answer": "bei Kritik am Staat",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 17",
+        "question": "Die deutschen Gesetze verbieten ...",
+        "answers": [
+            {
+                "answer": "Meinungsfreiheit der Einwohnerinnen und Einwohner.",
+                "is_correct": false
+            },
+            {
+                "answer": "Petitionen der Bürgerinnen und Bürger.",
+                "is_correct": false
+            },
+            {
+                "answer": "Versammlungsfreiheit der Einwohnerinnen und Einwohner.",
+                "is_correct": false
+            },
+            {
+                "answer": "Ungleichbehandlung der Bürgerinnen und Bürger durch den Staat.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 18",
+        "question": "Welches Grundrecht ist in Artikel 1 des Grundgesetzes der Bundesrepublik Deutschland garantiert?",
+        "answers": [
+            {
+                "answer": "die Unantastbarkeit der Menschenwürde",
+                "is_correct": true
+            },
+            {
+                "answer": "das Recht auf Leben",
+                "is_correct": false
+            },
+            {
+                "answer": "Religionsfreiheit",
+                "is_correct": false
+            },
+            {
+                "answer": "Meinungsfreiheit",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 19",
+        "question": "Was versteht man unter dem Recht der \"Freizügigkeit\" in Deutschland?",
+        "answers": [
+            {
+                "answer": "Man darf sich seinen Wohnort selbst aussuchen.",
+                "is_correct": true
+            },
+            {
+                "answer": "Man kann seinen Beruf wechseln.",
+                "is_correct": false
+            },
+            {
+                "answer": "Man darf sich für eine andere Religion entscheiden.",
+                "is_correct": false
+            },
+            {
+                "answer": "Man darf sich in der Öffentlichkeit nur leicht bekleidet bewegen.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 20",
+        "question": "Eine Partei in Deutschland verfolgt das Ziel, eine Diktatur zu errichten. Sie ist dann ...",
+        "answers": [
+            {
+                "answer": "tolerant.",
+                "is_correct": false
+            },
+            {
+                "answer": "rechtsstaatlich orientiert.",
+                "is_correct": false
+            },
+            {
+                "answer": "gesetzestreu.",
+                "is_correct": false
+            },
+            {
+                "answer": "verfassungswidrig.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 21",
+        "question": "Welches ist das Wappen der Bundesrepublik Deutschland?",
+        "answers": [
+            {
+                "answer": "Bild 1",
+                "is_correct": true
+            },
+            {
+                "answer": "Bild 2",
+                "is_correct": false
+            },
+            {
+                "answer": "Bild 3",
+                "is_correct": false
+            },
+            {
+                "answer": "Bild 4",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 22",
+        "question": "Was für eine Staatsform hat Deutschland?",
+        "answers": [
+            {
+                "answer": "Monarchie",
+                "is_correct": false
+            },
+            {
+                "answer": "Diktatur",
+                "is_correct": false
+            },
+            {
+                "answer": "Republik",
+                "is_correct": true
+            },
+            {
+                "answer": "Fürstentum",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 23",
+        "question": "In Deutschland sind die meisten Erwerbstätigen ...",
+        "answers": [
+            {
+                "answer": "in kleinen Familienunternehmen beschäftigt.",
+                "is_correct": false
+            },
+            {
+                "answer": "ehrenamtlich für ein Bundesland tätig.",
+                "is_correct": false
+            },
+            {
+                "answer": "selbstständig mit einer eigenen Firma tätig.",
+                "is_correct": false
+            },
+            {
+                "answer": "bei einer Firma oder Behörde beschäftigt.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 24",
+        "question": "Wie viele Bundesländer hat die Bundesrepublik Deutschland?",
+        "answers": [
+            {
+                "answer": "14",
+                "is_correct": false
+            },
+            {
+                "answer": "15",
+                "is_correct": false
+            },
+            {
+                "answer": "16",
+                "is_correct": true
+            },
+            {
+                "answer": "17",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 25",
+        "question": "Was ist kein Bundesland der Bundesrepublik Deutschland?",
+        "answers": [
+            {
+                "answer": "Elsass-Lothringen",
+                "is_correct": true
+            },
+            {
+                "answer": "Nordrhein-Westfalen",
+                "is_correct": false
+            },
+            {
+                "answer": "Mecklenburg-Vorpommern",
+                "is_correct": false
+            },
+            {
+                "answer": "Sachsen-Anhalt",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 26",
+        "question": "Deutschland ist ...",
+        "answers": [
+            {
+                "answer": "eine kommunistische Republik.",
+                "is_correct": false
+            },
+            {
+                "answer": "ein demokratischer und sozialer Bundesstaat.",
+                "is_correct": true
+            },
+            {
+                "answer": "eine kapitalistische und soziale Monarchie.",
+                "is_correct": false
+            },
+            {
+                "answer": "ein sozialer und sozialistischer Bundesstaat.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 27",
+        "question": "Deutschland ist ...",
+        "answers": [
+            {
+                "answer": "ein sozialistischer Staat.",
+                "is_correct": false
+            },
+            {
+                "answer": "ein Bundesstaat.",
+                "is_correct": true
+            },
+            {
+                "answer": "eine Diktatur.",
+                "is_correct": false
+            },
+            {
+                "answer": "eine Monarchie.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 28",
+        "question": "Wer wählt in Deutschland die Abgeordneten zum Bundestag?",
+        "answers": [
+            {
+                "answer": "das Militär",
+                "is_correct": false
+            },
+            {
+                "answer": "die Wirtschaft",
+                "is_correct": false
+            },
+            {
+                "answer": "das wahlberechtigte Volk",
+                "is_correct": true
+            },
+            {
+                "answer": "die Verwaltung",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 29",
+        "question": "Welches Tier ist das Wappentier der Bundesrepublik Deutschland?",
+        "answers": [
+            {
+                "answer": "Löwe",
+                "is_correct": false
+            },
+            {
+                "answer": "Adler",
+                "is_correct": true
+            },
+            {
+                "answer": "Bär",
+                "is_correct": false
+            },
+            {
+                "answer": "Pferd",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 30",
+        "question": "Was ist kein Merkmal unserer Demokratie?",
+        "answers": [
+            {
+                "answer": "regelmäßige Wahlen",
+                "is_correct": false
+            },
+            {
+                "answer": "Pressezensur",
+                "is_correct": true
+            },
+            {
+                "answer": "Meinungsfreiheit",
+                "is_correct": false
+            },
+            {
+                "answer": "verschiedene Parteien",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 31",
+        "question": "Die Zusammenarbeit von Parteien zur Bildung einer Regierung nennt man in Deutschland ...",
+        "answers": [
+            {
+                "answer": "Einheit.",
+                "is_correct": false
+            },
+            {
+                "answer": "Koalition.",
+                "is_correct": true
+            },
+            {
+                "answer": "Ministerium.",
+                "is_correct": false
+            },
+            {
+                "answer": "Fraktion.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 32",
+        "question": "Was ist keine staatliche Gewalt in Deutschland?",
+        "answers": [
+            {
+                "answer": "Gesetzgebung",
+                "is_correct": false
+            },
+            {
+                "answer": "Regierung",
+                "is_correct": false
+            },
+            {
+                "answer": "Presse",
+                "is_correct": true
+            },
+            {
+                "answer": "Rechtsprechung",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 33",
+        "question": "Welche Aussage ist richtig? In Deutschland ...",
+        "answers": [
+            {
+                "answer": "sind Staat und Religionsgemeinschaften voneinander getrennt.",
+                "is_correct": true
+            },
+            {
+                "answer": "bilden die Religionsgemeinschaften den Staat.",
+                "is_correct": false
+            },
+            {
+                "answer": "ist der Staat abhängig von den Religionsgemeinschaften.",
+                "is_correct": false
+            },
+            {
+                "answer": "bilden Staat und Religionsgemeinschaften eine Einheit.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 34",
+        "question": "Was ist Deutschland nicht?",
+        "answers": [
+            {
+                "answer": "eine Demokratie",
+                "is_correct": false
+            },
+            {
+                "answer": "ein Rechtsstaat",
+                "is_correct": false
+            },
+            {
+                "answer": "eine Monarchie",
+                "is_correct": true
+            },
+            {
+                "answer": "ein Sozialstaat",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 35",
+        "question": "Womit finanziert der deutsche Staat die Sozialversicherung?",
+        "answers": [
+            {
+                "answer": "Kirchensteuer",
+                "is_correct": false
+            },
+            {
+                "answer": "Sozialabgaben",
+                "is_correct": true
+            },
+            {
+                "answer": "Spendengeldern",
+                "is_correct": false
+            },
+            {
+                "answer": "Vereinsbeiträgen",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 36",
+        "question": "Welche Maßnahme schafft in Deutschland soziale Sicherheit?",
+        "answers": [
+            {
+                "answer": "die Krankenversicherung",
+                "is_correct": true
+            },
+            {
+                "answer": "die Autoversicherung",
+                "is_correct": false
+            },
+            {
+                "answer": "die Gebäudeversicherung",
+                "is_correct": false
+            },
+            {
+                "answer": "die Haftpflichtversicherung",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 37",
+        "question": "Wie werden die Regierungschefinnen/Regierungschefs der meisten Bundesländer in Deutschland genannt?",
+        "answers": [
+            {
+                "answer": "Erste Ministerin/Erster Minister",
+                "is_correct": false
+            },
+            {
+                "answer": "Premierministerin/Premierminister",
+                "is_correct": false
+            },
+            {
+                "answer": "Senatorin/Senator",
+                "is_correct": false
+            },
+            {
+                "answer": "Ministerpräsidentin/Ministerpräsident",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 38",
+        "question": "Die Bundesrepublik Deutschland ist ein demokratischer und sozialer ...",
+        "answers": [
+            {
+                "answer": "Staatenverbund.",
+                "is_correct": false
+            },
+            {
+                "answer": "Bundesstaat.",
+                "is_correct": true
+            },
+            {
+                "answer": "Staatenbund.",
+                "is_correct": false
+            },
+            {
+                "answer": "Zentralstaat.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 39",
+        "question": "Was hat jedes deutsche Bundesland?",
+        "answers": [
+            {
+                "answer": "eine eigene Außenministerin/einen eigenen Außenminister",
+                "is_correct": false
+            },
+            {
+                "answer": "eine eigene Währung",
+                "is_correct": false
+            },
+            {
+                "answer": "eine eigene Armee",
+                "is_correct": false
+            },
+            {
+                "answer": "eine eigene Regierung",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 40",
+        "question": "Mit welchen Worten beginnt die deutsche Nationalhymne?",
+        "answers": [
+            {
+                "answer": "Völker, hört die Signale ...",
+                "is_correct": false
+            },
+            {
+                "answer": "Einigkeit und Recht und Freiheit ...",
+                "is_correct": true
+            },
+            {
+                "answer": "Freude schöner Götterfunken ...",
+                "is_correct": false
+            },
+            {
+                "answer": "Deutschland einig Vaterland.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 41",
+        "question": "Warum gibt es in einer Demokratie mehr als eine Partei?",
+        "answers": [
+            {
+                "answer": "weil dadurch die unterschiedlichen Meinungen der Bürgerinnen und Bürger vertreten werden",
+                "is_correct": true
+            },
+            {
+                "answer": "damit Bestechung in der Politik begrenzt wird",
+                "is_correct": false
+            },
+            {
+                "answer": "um politische Demonstrationen zu verhindern",
+                "is_correct": false
+            },
+            {
+                "answer": "um wirtschaftlichen Wettbewerb anzuregen",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 42",
+        "question": "Wer beschließt in Deutschland ein neues Gesetz?",
+        "answers": [
+            {
+                "answer": "die Regierung",
+                "is_correct": false
+            },
+            {
+                "answer": "das Parlament",
+                "is_correct": true
+            },
+            {
+                "answer": "die Gerichte",
+                "is_correct": false
+            },
+            {
+                "answer": "die Polizei",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 43",
+        "question": "Wann kann in Deutschland eine Partei verboten werden?",
+        "answers": [
+            {
+                "answer": "wenn ihr Wahlkampf zu teuer ist",
+                "is_correct": false
+            },
+            {
+                "answer": "wenn sie gegen die Verfassung kämpft",
+                "is_correct": true
+            },
+            {
+                "answer": "wenn sie Kritik am Staatsoberhaupt äußert",
+                "is_correct": false
+            },
+            {
+                "answer": "wenn ihr Programm eine neue Richtung vorschlägt",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 44",
+        "question": "Wen kann man als Bürgerin/Bürger in Deutschland nicht direkt wählen?",
+        "answers": [
+            {
+                "answer": "Abgeordnete des EU-Parlaments",
+                "is_correct": false
+            },
+            {
+                "answer": "Die Bundespräsidentin/den Bundespräsidenten",
+                "is_correct": true
+            },
+            {
+                "answer": "Landtagsabgeordnete",
+                "is_correct": false
+            },
+            {
+                "answer": "Bundestagsabgeordnete",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 45",
+        "question": "Zu welcher Versicherung gehört die Pflegeversicherung?",
+        "answers": [
+            {
+                "answer": "Sozialversicherung",
+                "is_correct": true
+            },
+            {
+                "answer": "Unfallversicherung",
+                "is_correct": false
+            },
+            {
+                "answer": "Hausratsversicherung",
+                "is_correct": false
+            },
+            {
+                "answer": "Haftpflicht- und Feuerversicherung",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 46",
+        "question": "Der deutsche Staat hat viele Aufgaben. Welche Aufgabe gehört dazu?",
+        "answers": [
+            {
+                "answer": "Er baut Straßen und Schulen.",
+                "is_correct": true
+            },
+            {
+                "answer": "Er verkauft Lebensmittel und Kleidung.",
+                "is_correct": false
+            },
+            {
+                "answer": "Er versorgt alle Einwohnerinnen und Einwohner kostenlos mit Zeitungen.",
+                "is_correct": false
+            },
+            {
+                "answer": "Er produziert Autos und Busse.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 47",
+        "question": "Der deutsche Staat hat viele Aufgaben. Welche Aufgabe gehört nicht dazu?",
+        "answers": [
+            {
+                "answer": "Er bezahlt für alle Staatsangehörigen Urlaubsreisen.",
+                "is_correct": true
+            },
+            {
+                "answer": "Er zahlt Kindergeld.",
+                "is_correct": false
+            },
+            {
+                "answer": "Er unterstützt Museen.",
+                "is_correct": false
+            },
+            {
+                "answer": "Er fördert Sportlerinnen und Sportler.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 48",
+        "question": "Welches Organ gehört nicht zu den Verfassungsorganen Deutschlands?",
+        "answers": [
+            {
+                "answer": "der Bundesrat",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundespräsidentin/der Bundespräsident",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bürgerversammlung",
+                "is_correct": true
+            },
+            {
+                "answer": "die Regierung",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 49",
+        "question": "Wer bestimmt in Deutschland die Schulpolitik?",
+        "answers": [
+            {
+                "answer": "die Lehrer und Lehrerinnen",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundesländer",
+                "is_correct": true
+            },
+            {
+                "answer": "das Familienministerium",
+                "is_correct": false
+            },
+            {
+                "answer": "die Universitäten",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 50",
+        "question": "Die Wirtschaftsform in Deutschland nennt man ...",
+        "answers": [
+            {
+                "answer": "freie Zentralwirtschaft.",
+                "is_correct": false
+            },
+            {
+                "answer": "soziale Marktwirtschaft.",
+                "is_correct": true
+            },
+            {
+                "answer": "gelenkte Zentralwirtschaft.",
+                "is_correct": false
+            },
+            {
+                "answer": "Planwirtschaft.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 51",
+        "question": "Zu einem demokratischen Rechtsstaat gehört es nicht, dass ...",
+        "answers": [
+            {
+                "answer": "Menschen sich kritisch über die Regierung äußern können.",
+                "is_correct": false
+            },
+            {
+                "answer": "Bürger friedlich demonstrieren gehen dürfen.",
+                "is_correct": false
+            },
+            {
+                "answer": "Menschen von einer Privatpolizei ohne Grund verhaftet werden.",
+                "is_correct": true
+            },
+            {
+                "answer": "jemand ein Verbrechen begeht und deshalb verhaftet wird.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 52",
+        "question": "Was bedeutet \"Volkssouveränität\"? Alle Staatsgewalt geht vom ...",
+        "answers": [
+            {
+                "answer": "Volke aus.",
+                "is_correct": true
+            },
+            {
+                "answer": "Bundestag aus.",
+                "is_correct": false
+            },
+            {
+                "answer": "preußischen König aus.",
+                "is_correct": false
+            },
+            {
+                "answer": "Bundesverfassungsgericht aus.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 53",
+        "question": "Was bedeutet \"Rechtsstaat\" in Deutschland?",
+        "answers": [
+            {
+                "answer": "Der Staat hat Recht.",
+                "is_correct": false
+            },
+            {
+                "answer": "Es gibt nur rechte Parteien.",
+                "is_correct": false
+            },
+            {
+                "answer": "Die Bürgerinnen und Bürger entscheiden über Gesetze.",
+                "is_correct": false
+            },
+            {
+                "answer": "Der Staat muss die Gesetze einhalten.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 54",
+        "question": "Was ist keine staatliche Gewalt in Deutschland?",
+        "answers": [
+            {
+                "answer": "Legislative",
+                "is_correct": false
+            },
+            {
+                "answer": "Judikative",
+                "is_correct": false
+            },
+            {
+                "answer": "Exekutive",
+                "is_correct": false
+            },
+            {
+                "answer": "Direktive",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 55",
+        "question": "Was zeigt dieses Bild?",
+        "answers": [
+            {
+                "answer": "den Bundestagssitz in Berlin",
+                "is_correct": true
+            },
+            {
+                "answer": "das Bundesverfassungsgericht in Karlsruhe",
+                "is_correct": false
+            },
+            {
+                "answer": "das Bundesratsgebäude in Berlin",
+                "is_correct": false
+            },
+            {
+                "answer": "das Bundeskanzleramt in Berlin",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 56",
+        "question": "Welches Amt gehört in Deutschland zur Gemeindeverwaltung?",
+        "answers": [
+            {
+                "answer": "Pfarramt",
+                "is_correct": false
+            },
+            {
+                "answer": "Ordnungsamt",
+                "is_correct": true
+            },
+            {
+                "answer": "Finanzamt",
+                "is_correct": false
+            },
+            {
+                "answer": "Auswärtiges Amt",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 57",
+        "question": "Wer wird meistens zur Präsidentin/zum Präsidenten des Deutschen Bundestages gewählt?",
+        "answers": [
+            {
+                "answer": "die/der älteste Abgeordnete im Parlament",
+                "is_correct": false
+            },
+            {
+                "answer": "die Ministerpräsidentin/der Ministerpräsident des größten Bundeslandes",
+                "is_correct": false
+            },
+            {
+                "answer": "eine ehemalige Bundeskanzlerin/ein ehemaliger Bundeskanzler",
+                "is_correct": false
+            },
+            {
+                "answer": "eine Abgeordnete/ein Abgeordneter der stärksten Fraktion",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 58",
+        "question": "Wer ernennt in Deutschland die Ministerinnen/die Minister der Bundesregierung?",
+        "answers": [
+            {
+                "answer": "die Präsidentin/der Präsident des Bundesverfassungsgerichtes",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundespräsidentin/der Bundespräsident",
+                "is_correct": true
+            },
+            {
+                "answer": "die Bundesratspräsidentin/der Bundesratspräsident",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundestagspräsidentin/der Bundestagspräsident",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 59",
+        "question": "Vor wie vielen Jahren gab es erstmals eine jüdische Gemeinde auf dem Gebiet des heutigen Deutschlands?",
+        "answers": [
+            {
+                "answer": "vor etwa 300 Jahren",
+                "is_correct": false
+            },
+            {
+                "answer": "vor etwa 700 Jahren",
+                "is_correct": false
+            },
+            {
+                "answer": "vor etwa 1150 Jahren",
+                "is_correct": true
+            },
+            {
+                "answer": "vor etwa 1700 Jahren",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 60",
+        "question": "In Deutschland gehören der Bundestag und der Bundesrat zur ...",
+        "answers": [
+            {
+                "answer": "Exekutive.",
+                "is_correct": false
+            },
+            {
+                "answer": "Legislative.",
+                "is_correct": true
+            },
+            {
+                "answer": "Direktive.",
+                "is_correct": false
+            },
+            {
+                "answer": "Judikative.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 61",
+        "question": "Was bedeutet \"Volkssouveränität\"?",
+        "answers": [
+            {
+                "answer": "Die Königin/der König herrscht über das Volk.",
+                "is_correct": false
+            },
+            {
+                "answer": "Das Bundesverfassungsgericht steht über der Verfassung.",
+                "is_correct": false
+            },
+            {
+                "answer": "Die Interessenverbände üben die Souveränität zusammen mit der Regierung aus.",
+                "is_correct": false
+            },
+            {
+                "answer": "Die Staatsgewalt geht vom Volke aus.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 62",
+        "question": "Wenn das Parlament eines deutschen Bundeslandes gewählt wird, nennt man das ...",
+        "answers": [
+            {
+                "answer": "Kommunalwahl",
+                "is_correct": false
+            },
+            {
+                "answer": "Landtagswahl",
+                "is_correct": true
+            },
+            {
+                "answer": "Europawahl",
+                "is_correct": false
+            },
+            {
+                "answer": "Bundestagswahl",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 63",
+        "question": "Was gehört in Deutschland nicht zur Exekutive?",
+        "answers": [
+            {
+                "answer": "die Polizei",
+                "is_correct": false
+            },
+            {
+                "answer": "die Gerichte",
+                "is_correct": true
+            },
+            {
+                "answer": "das Finanzamt",
+                "is_correct": false
+            },
+            {
+                "answer": "die Ministerien",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 64",
+        "question": "Die Bundesrepublik Deutschland ist heute gegliedert in ...",
+        "answers": [
+            {
+                "answer": "vier Besatzungszonen.",
+                "is_correct": false
+            },
+            {
+                "answer": "einen Oststaat und einen Weststaat.",
+                "is_correct": false
+            },
+            {
+                "answer": "16 Kantone.",
+                "is_correct": false
+            },
+            {
+                "answer": "Bund, Länder und Kommunen.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 65",
+        "question": "Es gehört nicht zu den Aufgaben des Deutschen Bundestages, ...",
+        "answers": [
+            {
+                "answer": "Gesetze zu entwerfen.",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundesregierung zu kontrollieren.",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundeskanzlerin/den Bundeskanzler zu wählen.",
+                "is_correct": false
+            },
+            {
+                "answer": "das Bundeskabinett zu bilden.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 66",
+        "question": "Welche Städte haben die größten jüdischen Gemeinden in Deutschland?",
+        "answers": [
+            {
+                "answer": "Berlin und München",
+                "is_correct": true
+            },
+            {
+                "answer": "Hamburg und Essen",
+                "is_correct": false
+            },
+            {
+                "answer": "Nürnberg und Stuttgart",
+                "is_correct": false
+            },
+            {
+                "answer": "Worms und Speyer",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 67",
+        "question": "Was ist in Deutschland vor allem eine Aufgabe der Bundesländer?",
+        "answers": [
+            {
+                "answer": "Verteidigungspolitik",
+                "is_correct": false
+            },
+            {
+                "answer": "Außenpolitik",
+                "is_correct": false
+            },
+            {
+                "answer": "Wirtschaftspolitik",
+                "is_correct": false
+            },
+            {
+                "answer": "Schulpolitik",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 68",
+        "question": "Warum kontrolliert der Staat in Deutschland das Schulwesen?",
+        "answers": [
+            {
+                "answer": "weil es in Deutschland nur staatliche Schulen gibt",
+                "is_correct": false
+            },
+            {
+                "answer": "weil alle Schülerinnen und Schüler einen Schulabschluss haben müssen",
+                "is_correct": false
+            },
+            {
+                "answer": "weil es in den Bundesländern verschiedene Schulen gibt",
+                "is_correct": false
+            },
+            {
+                "answer": "weil es nach dem Grundgesetz seine Aufgabe ist",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 69",
+        "question": "Die Bundesrepublik Deutschland hat einen dreistufigen Verwaltungsaufbau. Wie heißt die unterste politische Stufe?",
+        "answers": [
+            {
+                "answer": "Stadträte",
+                "is_correct": false
+            },
+            {
+                "answer": "Landräte",
+                "is_correct": false
+            },
+            {
+                "answer": "Gemeinden",
+                "is_correct": true
+            },
+            {
+                "answer": "Bezirksämter",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 70",
+        "question": "Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben der deutschen Bundespräsidentin/des deutschen Bundespräsidenten?",
+        "answers": [
+            {
+                "answer": "Sie/Er führt die Regierungsgeschäfte.",
+                "is_correct": false
+            },
+            {
+                "answer": "Sie/Er kontrolliert die Regierungspartei.",
+                "is_correct": false
+            },
+            {
+                "answer": "Sie/Er wählt die Ministerinnen/Minister aus.",
+                "is_correct": false
+            },
+            {
+                "answer": "Sie/Er schlägt die Kanzlerin/den Kanzler zur Wahl vor.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 71",
+        "question": "Wo hält sich die deutsche Bundeskanzlerin/der deutsche Bundeskanzler am häufigsten auf? Am häufigsten ist sie/er ...",
+        "answers": [
+            {
+                "answer": "in Bonn, weil sich dort das Bundeskanzleramt und der Bundestag befinden.",
+                "is_correct": false
+            },
+            {
+                "answer": "auf Schloss Meseberg, dem Gästehaus der Bundesregierung, um Staatsgäste zu empfangen.",
+                "is_correct": false
+            },
+            {
+                "answer": "auf Schloss Bellevue, dem Amtssitz der Bundespräsidentin/des Bundespräsidenten, um Staatsgäste zu empfangen.",
+                "is_correct": false
+            },
+            {
+                "answer": "in Berlin, weil sich dort das Bundeskanzleramt und der Bundestag befinden.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 72",
+        "question": "Wie heißt die jetzige Bundeskanzlerin/der jetzige Bundeskanzler von Deutschland?",
+        "answers": [
+            {
+                "answer": "Gerhard Schröder",
+                "is_correct": false
+            },
+            {
+                "answer": "Angela Merkel",
+                "is_correct": false
+            },
+            {
+                "answer": "Franziska Giffey",
+                "is_correct": false
+            },
+            {
+                "answer": "Olaf Scholz",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 73",
+        "question": "Die beiden größten Fraktionen im Deutschen Bundestag heißen zurzeit ...",
+        "answers": [
+            {
+                "answer": "CDU/CSU und SPD.",
+                "is_correct": true
+            },
+            {
+                "answer": "Die Linke und Bündnis 90/Die Grünen.",
+                "is_correct": false
+            },
+            {
+                "answer": "FDP und SPD.",
+                "is_correct": false
+            },
+            {
+                "answer": "Die Linke und FDP.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 74",
+        "question": "Wie heißt das Parlament für ganz Deutschland?",
+        "answers": [
+            {
+                "answer": "Bundesversammlung",
+                "is_correct": false
+            },
+            {
+                "answer": "Volkskammer",
+                "is_correct": false
+            },
+            {
+                "answer": "Bundestag",
+                "is_correct": true
+            },
+            {
+                "answer": "Bundesgerichtshof",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 75",
+        "question": "Wie heißt Deutschlands heutiges Staatsoberhaupt?",
+        "answers": [
+            {
+                "answer": "Frank-Walter Steinmeier",
+                "is_correct": true
+            },
+            {
+                "answer": "Bärbel Bas",
+                "is_correct": false
+            },
+            {
+                "answer": "Bodo Ramelow",
+                "is_correct": false
+            },
+            {
+                "answer": "Joachim Gauck",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 76",
+        "question": "Was bedeutet die Abkürzung CDU in Deutschland?",
+        "answers": [
+            {
+                "answer": "Christliche Deutsche Union",
+                "is_correct": false
+            },
+            {
+                "answer": "Club Deutscher Unternehmer",
+                "is_correct": false
+            },
+            {
+                "answer": "Christlicher Deutscher Umweltschutz",
+                "is_correct": false
+            },
+            {
+                "answer": "Christlich Demokratische Union",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 77",
+        "question": "Was ist die Bundeswehr?",
+        "answers": [
+            {
+                "answer": "die deutsche Polizei",
+                "is_correct": false
+            },
+            {
+                "answer": "ein deutscher Hafen",
+                "is_correct": false
+            },
+            {
+                "answer": "eine deutsche Bürgerinitiative",
+                "is_correct": false
+            },
+            {
+                "answer": "die deutsche Armee",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 78",
+        "question": "Was bedeutet die Abkürzung SPD?",
+        "answers": [
+            {
+                "answer": "Sozialistische Partei Deutschlands",
+                "is_correct": false
+            },
+            {
+                "answer": "Sozialpolitische Partei Deutschlands",
+                "is_correct": false
+            },
+            {
+                "answer": "Sozialdemokratische Partei Deutschlands",
+                "is_correct": true
+            },
+            {
+                "answer": "Sozialgerechte Partei Deutschlands",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 79",
+        "question": "Was bedeutet die Abkürzung FDP in Deutschland?",
+        "answers": [
+            {
+                "answer": "Friedliche Demonstrative Partei",
+                "is_correct": false
+            },
+            {
+                "answer": "Freie Deutschland Partei",
+                "is_correct": false
+            },
+            {
+                "answer": "Führende Demokratische Partei",
+                "is_correct": false
+            },
+            {
+                "answer": "Freie Demokratische Partei",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 80",
+        "question": "Welches Gericht in Deutschland ist zuständig für die Auslegung des Grundgesetzes?",
+        "answers": [
+            {
+                "answer": "Oberlandesgericht",
+                "is_correct": false
+            },
+            {
+                "answer": "Amtsgericht",
+                "is_correct": false
+            },
+            {
+                "answer": "Bundesverfassungsgericht",
+                "is_correct": true
+            },
+            {
+                "answer": "Verwaltungsgericht",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 81",
+        "question": "Wer wählt die Bundeskanzlerin/den Bundeskanzler in Deutschland?",
+        "answers": [
+            {
+                "answer": "der Bundesrat",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundesversammlung",
+                "is_correct": false
+            },
+            {
+                "answer": "das Volk",
+                "is_correct": false
+            },
+            {
+                "answer": "der Bundestag",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 82",
+        "question": "Wer leitet das deutsche Bundeskabinett?",
+        "answers": [
+            {
+                "answer": "die Bundestagspräsidentin/der Bundestagspräsident",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundespräsidentin/der Bundespräsident",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundesratspräsidentin/der Bundesratspräsident",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundeskanzlerin/der Bundeskanzler",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 83",
+        "question": "Wer wählt die deutsche Bundeskanzlerin/den deutschen Bundeskanzler?",
+        "answers": [
+            {
+                "answer": "das Volk",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundesversammlung",
+                "is_correct": false
+            },
+            {
+                "answer": "der Bundestag",
+                "is_correct": true
+            },
+            {
+                "answer": "die Bundesregierung",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 84",
+        "question": "Welche Hauptaufgabe hat die deutsche Bundespräsidentin/der deutsche Bundespräsident? Sie/Er...",
+        "answers": [
+            {
+                "answer": "regiert das Land.",
+                "is_correct": false
+            },
+            {
+                "answer": "entwirft die Gesetze.",
+                "is_correct": false
+            },
+            {
+                "answer": "repräsentiert das Land.",
+                "is_correct": true
+            },
+            {
+                "answer": "überwacht die Einhaltung der Gesetze.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 85",
+        "question": "Wer bildet den deutschen Bundesrat?",
+        "answers": [
+            {
+                "answer": "die Abgeordneten des Bundestages",
+                "is_correct": false
+            },
+            {
+                "answer": "die Ministerinnen und Minister der Bundesregierung",
+                "is_correct": false
+            },
+            {
+                "answer": "die Regierungsvertreter der Bundesländer",
+                "is_correct": true
+            },
+            {
+                "answer": "die Parteimitglieder",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 86",
+        "question": "Wer wählt in Deutschland die Bundespräsidentin/der Bundespräsidenten?",
+        "answers": [
+            {
+                "answer": "die Bundesversammlung",
+                "is_correct": true
+            },
+            {
+                "answer": "der Bundesrat",
+                "is_correct": false
+            },
+            {
+                "answer": "das Bundesparlament",
+                "is_correct": false
+            },
+            {
+                "answer": "das Bundesverfassungsgericht",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 87",
+        "question": "Wer ist das Staatsoberhaupt der Bundesrepublik Deutschland?",
+        "answers": [
+            {
+                "answer": "die Bundeskanzlerin/der Bundeskanzler",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundespräsidentin/der Bundespräsident",
+                "is_correct": true
+            },
+            {
+                "answer": "die Bundesratspräsidentin/der Bundesratspräsident",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundestagspräsidentin/der Bundestagspräsident",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 88",
+        "question": "Die parlamentarische Opposition im Deutschen Bundestag ...",
+        "answers": [
+            {
+                "answer": "kontrolliert die Regierung.",
+                "is_correct": true
+            },
+            {
+                "answer": "entscheidet, wer Bundesministerin/Bundesminister wird.",
+                "is_correct": false
+            },
+            {
+                "answer": "bestimmt, wer im Bundesrat sitzt.",
+                "is_correct": false
+            },
+            {
+                "answer": "schlägt die Regierungschefinnen/Regierungschefs der Länder vor.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 89",
+        "question": "Wie nennt man in Deutschland die Vereinigung von Abgeordneten einer Partei im Parlament?",
+        "answers": [
+            {
+                "answer": "Verband",
+                "is_correct": false
+            },
+            {
+                "answer": "Ältestenrat",
+                "is_correct": false
+            },
+            {
+                "answer": "Fraktion",
+                "is_correct": true
+            },
+            {
+                "answer": "Opposition",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 90",
+        "question": "Die deutschen Bundesländer wirken an der Gesetzgebung des Bundes mit durch ...",
+        "answers": [
+            {
+                "answer": "den Bundesrat.",
+                "is_correct": true
+            },
+            {
+                "answer": "die Bundesversammlung.",
+                "is_correct": false
+            },
+            {
+                "answer": "den Bundestag.",
+                "is_correct": false
+            },
+            {
+                "answer": "die Bundesregierung.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 91",
+        "question": "In Deutschland kann ein Regierungswechsel in einem Bundesland Auswirkungen auf die Bundespolitik haben. Das Regieren wird",
+        "answers": [
+            {
+                "answer": "schwieriger, wenn sich dadurch die Mehrheit im Bundestag ändert.",
+                "is_correct": false
+            },
+            {
+                "answer": "leichter, wenn dadurch neue Parteien in den Bundesrat kommen.",
+                "is_correct": false
+            },
+            {
+                "answer": "schwieriger, wenn dadurch die Mehrheit im Bundesrat verändert wird.",
+                "is_correct": true
+            },
+            {
+                "answer": "leichter, wenn es sich um ein reiches Bundesland handelt.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 92",
+        "question": "Was bedeutet die Abkürzung CSU in Deutschland?",
+        "answers": [
+            {
+                "answer": "Christlich Sichere Union",
+                "is_correct": false
+            },
+            {
+                "answer": "Christlich Süddeutsche Union",
+                "is_correct": false
+            },
+            {
+                "answer": "Christlich Sozialer Unternehmerverband",
+                "is_correct": false
+            },
+            {
+                "answer": "Christlich Soziale Union",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 93",
+        "question": "Je mehr \"Zweitstimmen\" eine Partei bei einer Bundestagswahl bekommt, desto ...",
+        "answers": [
+            {
+                "answer": "weniger Erststimmen kann sie haben.",
+                "is_correct": false
+            },
+            {
+                "answer": "mehr Direktkandidaten der Partei ziehen ins Parlament ein.",
+                "is_correct": false
+            },
+            {
+                "answer": "größer ist das Risiko, eine Koalition bilden zu müssen.",
+                "is_correct": false
+            },
+            {
+                "answer": "mehr Sitze erhält die Partei im Parlament.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 94",
+        "question": "Ab welchem Alter darf man in Deutschland an der Wahl zum Deutschen Bundestag teilnehmen?",
+        "answers": [
+            {
+                "answer": "16",
+                "is_correct": false
+            },
+            {
+                "answer": "18",
+                "is_correct": true
+            },
+            {
+                "answer": "21",
+                "is_correct": false
+            },
+            {
+                "answer": "23",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 95",
+        "question": "Was gilt für die meisten Kinder in Deutschland?",
+        "answers": [
+            {
+                "answer": "Wahlpflicht",
+                "is_correct": false
+            },
+            {
+                "answer": "Schulpflicht",
+                "is_correct": true
+            },
+            {
+                "answer": "Schweigepflicht",
+                "is_correct": false
+            },
+            {
+                "answer": "Religionspflicht",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 96",
+        "question": "Wie kann jemand, der den Holocaust leugnet, bestraft werden?",
+        "answers": [
+            {
+                "answer": "Kürzung sozialer Leistungen",
+                "is_correct": false
+            },
+            {
+                "answer": "bis zu 100 Sozialstunden",
+                "is_correct": false
+            },
+            {
+                "answer": "gar nicht, Holocaustleugnung ist erlaubt",
+                "is_correct": false
+            },
+            {
+                "answer": "mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 97",
+        "question": "Was bezahlt man in Deutschland automatisch, wenn man fest angestellt ist?",
+        "answers": [
+            {
+                "answer": "Sozialversicherung",
+                "is_correct": true
+            },
+            {
+                "answer": "Sozialhilfe",
+                "is_correct": false
+            },
+            {
+                "answer": "Kindergeld",
+                "is_correct": false
+            },
+            {
+                "answer": "Wohngeld",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 98",
+        "question": "Wenn Abgeordnete im Deutschen Bundestag ihre Fraktion wechseln, ...",
+        "answers": [
+            {
+                "answer": "dürfen sie nicht mehr an den Sitzungen des Parlaments teilnehmen.",
+                "is_correct": false
+            },
+            {
+                "answer": "kann die Regierung ihre Mehrheit verlieren.",
+                "is_correct": true
+            },
+            {
+                "answer": "muss die Bundespräsidentin/der Bundespräsident zuvor ihr/sein Einverständnis geben.",
+                "is_correct": false
+            },
+            {
+                "answer": "dürfen die Wählerinnen/Wähler dieser Abgeordneten noch einmal wählen.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 99",
+        "question": "Wer bezahlt in Deutschland die Sozialversicherungen?",
+        "answers": [
+            {
+                "answer": "Arbeitgeberinnen/Arbeitgeber und Arbeitnehmerinnen/Arbeitnehmer",
+                "is_correct": true
+            },
+            {
+                "answer": "nur Arbeitnehmerinnen/Arbeitnehmer",
+                "is_correct": false
+            },
+            {
+                "answer": "alle Staatsangehörigen",
+                "is_correct": false
+            },
+            {
+                "answer": "nur Arbeitgeberinnen/Arbeitgeber",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 100",
+        "question": "Was gehört nicht zur gesetzlichen Sozialversicherung?",
+        "answers": [
+            {
+                "answer": "die Lebensversicherung",
+                "is_correct": true
+            },
+            {
+                "answer": "die gesetzliche Rentenversicherung",
+                "is_correct": false
+            },
+            {
+                "answer": "die Arbeitslosenversicherung",
+                "is_correct": false
+            },
+            {
+                "answer": "die Pflegeversicherung",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 101",
+        "question": "Gewerkschaften sind Interessenverbände der ...",
+        "answers": [
+            {
+                "answer": "Jugendlichen.",
+                "is_correct": false
+            },
+            {
+                "answer": "Arbeitnehmerinnen und Arbeitnehmer.",
+                "is_correct": true
+            },
+            {
+                "answer": "Rentnerinnen und Rentner.",
+                "is_correct": false
+            },
+            {
+                "answer": "Arbeitgeberinnen und Arbeitgeber.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 102",
+        "question": "Womit kann man in der Bundesrepublik Deutschland geehrt werden, wenn man auf politischem, wirtschaftlichem, kulturellem, geistigem oder sozialem Gebiet eine besondere Leistung erbracht hat? Mit dem ...",
+        "answers": [
+            {
+                "answer": "Bundesverdienstkreuz",
+                "is_correct": true
+            },
+            {
+                "answer": "Bundesadler",
+                "is_correct": false
+            },
+            {
+                "answer": "Vaterländischen Verdienstorden",
+                "is_correct": false
+            },
+            {
+                "answer": "Ehrentitel \"Held der Deutschen Demokratischen Republik\"",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 103",
+        "question": "Was wird in Deutschland als \"Ampelkoalition\" bezeichnet? Die Zusammenarbeit ...",
+        "answers": [
+            {
+                "answer": "der Bundestagsfraktionen von CDU und CSU",
+                "is_correct": false
+            },
+            {
+                "answer": "von SPD, FDP und Bündnis 90/Die Grünen in einer Regierung",
+                "is_correct": true
+            },
+            {
+                "answer": "von CSU, Die LINKE und Bündnis 90/Die Grünen in einer Regierung",
+                "is_correct": false
+            },
+            {
+                "answer": "der Bundestagsfraktionen von CDU und SPD",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Aufgabe 104",
+        "question": "Eine Frau in Deutschland verliert ihre Arbeit. Was darf nicht der Grund für diese Entlassung sein?",
+        "answers": [
+            {
+                "answer": "Die Frau ist lange krank und arbeitsunfähig.",
+                "is_correct": false
+            },
+            {
+                "answer": "Die Frau kam oft zu spät zur Arbeit.",
+                "is_correct": false
+            },
+            {
+                "answer": "Die Frau erledigt private Sachen während der Arbeitszeit.",
+                "is_correct": false
+            },
+            {
+                "answer": "Die Frau bekommt ein Kind und ihr Chef weiß das.",
+                "is_correct": true
+            }
+        ]
+    }
+]
