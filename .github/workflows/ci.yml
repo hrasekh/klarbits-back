@@ -57,11 +57,15 @@ jobs:
         env:
           RAILS_ENV: test
           DATABASE_URL: postgres://postgres:postgres@postgres:5432/klarbits_test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
 
       - name: Run tests
         run: bin/rails test test:system
         env:
           RAILS_ENV: test
           DATABASE_URL: postgres://postgres:postgres@postgres:5432/klarbits_test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
 
 
