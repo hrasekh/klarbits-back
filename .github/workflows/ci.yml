@@ -36,9 +36,6 @@ jobs:
         options: --health-cmd="pg_isready" --health-interval=10s --health-timeout=5s --health-retries=3
 
     steps:
-      # - name: Install packages
-      #   run: sudo apt-get update && sudo apt-get install --no-install-recommends -y google-chrome-stable curl libjemalloc2 libvips postgresql-client
-
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -47,6 +44,9 @@ jobs:
         with:
           ruby-version: .ruby-version
           bundler-cache: true
+
+      - name: Wait for PostgreSQL
+        run: until pg_isready -h postgres -p 5432; do sleep 1; done
 
       - name: Setup DB
         run: bundle exec rake db:create db:schema:load
