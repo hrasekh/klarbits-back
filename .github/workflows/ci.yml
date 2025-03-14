@@ -48,6 +48,9 @@ jobs:
           ruby-version: .ruby-version
           bundler-cache: true
 
+      - name: Create Test Database
+        run: psql -h postgres -U postgres -p 5432 -c 'CREATE DATABASE klarbits_test;'
+
       - name: Run tests
         env:
           RAILS_ENV: test
