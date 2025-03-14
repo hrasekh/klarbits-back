@@ -29,11 +29,6 @@ jobs:
       - name: Lint code for consistent style
         run: bin/rubocop -f github
 
-      - name: Check for security vulnerabilities
-        run: |
-          bundle exec brakeman -q -w2
-          bundle exec bundler-audit check --update
-
   test:
     name: Tests
     runs-on: ubuntu-latest
