@@ -48,14 +48,17 @@ jobs:
           ruby-version: .ruby-version
           bundler-cache: true
 
-      - name: Create Test Database
-        run: psql -h postgres -U postgres -p 5432 -c 'CREATE DATABASE klarbits_test;'
-
-      - name: Run tests
+      - name: Setup DB
+        run: bundle exec rake db:create db:schema:load
         env:
           RAILS_ENV: test
           DATABASE_URL: postgres://postgres:postgres@postgres:5432/klarbits_test
-        run: bin/rails db:test:prepare test test:system
+
+      - name: Run tests
+        run: bin/rails test test:system
+        env:
+          RAILS_ENV: test
+          DATABASE_URL: postgres://postgres:postgres@postgres:5432/klarbits_test
 
       - name: Keep screenshots from failed system tests
         uses: actions/upload-artifact@v4
