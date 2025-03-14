@@ -33,7 +33,11 @@ jobs:
           POSTGRES_PASSWORD: postgres
         ports:
           - 5432:5432
-        options: --health-cmd="pg_isready" --health-interval=10s --health-timeout=5s --health-retries=3
+        options: 
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
 
     steps:
       - name: Checkout code
@@ -44,9 +48,12 @@ jobs:
         with:
           ruby-version: .ruby-version
           bundler-cache: true
+      
+      - name: Install dependencies
+        run: bundle install --jobs 4 --retry 3
 
-      # - name: Wait for PostgreSQL
-      #   run: until pg_isready -h postgres -p 5432; do sleep 1; done
+      - name: Wait for PostgreSQL
+        run: until pg_isready -h postgres -p 5432; do sleep 10; done
 
       - name: Setup DB
         run: bundle exec rake db:create db:schema:load
@@ -60,10 +67,4 @@ jobs:
           RAILS_ENV: test
           DATABASE_URL: postgres://postgres:postgres@postgres:5432/klarbits_test
 
-      - name: Keep screenshots from failed system tests
-        uses: actions/upload-artifact@v4
-        if: failure()
-        with:
-          name: screenshots
-          path: ${{ github.workspace }}/tmp/screenshots
-          if-no-files-found: ignore
+
