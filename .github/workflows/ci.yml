@@ -45,8 +45,8 @@ jobs:
           ruby-version: .ruby-version
           bundler-cache: true
 
-      - name: Wait for PostgreSQL
-        run: until pg_isready -h postgres -p 5432; do sleep 1; done
+      # - name: Wait for PostgreSQL
+      #   run: until pg_isready -h postgres -p 5432; do sleep 1; done
 
       - name: Setup DB
         run: bundle exec rake db:create db:schema:load
