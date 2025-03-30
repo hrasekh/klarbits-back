@@ -1,5 +1,5 @@
 class Api::V1::QuestionsController < ApplicationController
-  before_action :authenticate_user!, only: %i[update]  
+  before_action :authenticate_user!, only: %i[update]
   before_action :admin_required, only: %i[update]
   before_action :load_question, only: %i[show update]
 
@@ -25,13 +25,12 @@ class Api::V1::QuestionsController < ApplicationController
   end
 
   def admin_required
-    unless current_user&.admin?
-      render json: { error: 'Unauthorized' }, status: :forbidden
-    end
+    return if current_user&.admin?
+
+    render json: { error: 'Unauthorized' }, status: :forbidden
   end
 
   def question_params
     params.require(:question).permit(:image)
   end
-
 end

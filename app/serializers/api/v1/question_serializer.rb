@@ -1,5 +1,5 @@
 class Api::V1::QuestionSerializer < ActiveModel::Serializer
-  include Rails.application.routes.url_helpers 
+  include Rails.application.routes.url_helpers
   attributes :uuid, :title, :question, :translation, :next_question, :previous_question, :answers,
              :statistic, :image_url
 
