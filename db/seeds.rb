@@ -1,6 +1,7 @@
 require 'securerandom'
 require 'json'
 
+User.destroy_all
 Category.destroy_all
 Subcategory.destroy_all
 Question.destroy_all
@@ -31,5 +32,12 @@ questions.each do |q|
     end
   end
 end
-
 puts "Data seeded, #{questions.count} has been created!"
+
+User.create!(
+  email: 'admin@example.com',
+  password: 'password',
+  password_confirmation: 'password',
+  role: :admin
+) unless User.exists?(email: 'admin@example.com')
+puts "User admin has been created!"

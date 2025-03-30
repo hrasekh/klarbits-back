@@ -1,18 +1,10 @@
 class Api::V1::QuestionsController < ApplicationController
-  before_action :load_question, only: %i[show update destroy]
+  before_action :authenticate_user!, only: %i[update]  
+  before_action :admin_required, only: %i[update]
+  before_action :load_question, only: %i[show update]
 
   def show
     render json: @question, locale: params[:locale]
-  end
-
-  def create
-    @question = Question.new(question_params)
-
-    if @question.save
-      render json: @question, status: :created
-    else
-      render json: { errors: @question.errors }, status: :unprocessable_entity
-    end
   end
 
   def update
@@ -23,11 +15,6 @@ class Api::V1::QuestionsController < ApplicationController
     end
   end
 
-  def destroy
-    @question.destroy
-    head :no_content
-  end
-
   private
 
   def load_question
@@ -36,4 +23,15 @@ class Api::V1::QuestionsController < ApplicationController
 
     render json: { error: 'Question not found' }, status: :not_found
   end
+
+  def admin_required
+    unless current_user&.admin?
+      render json: { error: 'Unauthorized' }, status: :forbidden
+    end
+  end
+
+  def question_params
+    params.require(:question).permit(:image)
+  end
+
 end

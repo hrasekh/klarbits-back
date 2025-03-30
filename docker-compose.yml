@@ -23,6 +23,10 @@ services:
       RAILS_MAX_THREADS: 5
       DATABASE_URL:
       POSTGRES_PASSWORD:
+      DEVISE_JWT_SECRET_KEY:
+      DOMAIN:
+      DOMAIN_HOST:
+      DOMAIN_PORT:
 
 volumes:
   postgres_data:

@@ -30,7 +30,8 @@ gem 'bootsnap', require: false
 # gem "rack-cors"
 
 gem 'active_model_serializers'
-
+gem 'devise'
+gem 'devise-jwt'
 gem 'aws-sdk-s3', require: false
 
 group :development, :test do
