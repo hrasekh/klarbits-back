@@ -1,6 +1,6 @@
 class Api::V1::QuestionSerializer < ActiveModel::Serializer
   attributes :uuid, :title, :question, :translation, :next_question, :previous_question, :answers,
-             :statistic
+             :statistic, :image_url
 
   def next_question
     serialize_question(next_question_object)
@@ -25,6 +25,18 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
 
   def translation
     object.translated_question(Current.locale)
+  end
+
+  def image_url
+    return unless object.image.attached?
+
+    if Rails.application.config.active_storage.service == :cloudflare
+      # For Cloudflare R2 with public access
+      object.image.url
+    else
+      # Fallback to signed URLs
+      rails_blob_url(object.image)
+    end
   end
 
   private

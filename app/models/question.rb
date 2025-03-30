@@ -8,6 +8,9 @@ class Question < ApplicationRecord
   validates :uuid, presence: true, uniqueness: true
   validate :category_matches_subcategory
 
+  has_one_attached :image
+  validate :acceptable_image, if: -> { image.attached? }
+
   before_validation :generate_uuid
 
   def self.find_by_uuid(uuid)
@@ -22,6 +25,19 @@ class Question < ApplicationRecord
 
   def generate_uuid
     self.uuid = SecureRandom.uuid if uuid.blank?
+  end
+
+  def acceptable_image
+    return unless image.attached?
+
+    # Validate file size
+    errors.add(:image, 'should be less than 5MB') unless image.byte_size <= 5.megabytes
+
+    # Validate content type
+    acceptable_types = ['image/jpeg', 'image/png', 'image/gif']
+    return if acceptable_types.include?(image.content_type)
+
+    errors.add(:image, 'must be a JPEG, PNG, or GIF')
   end
 
   def category_matches_subcategory
