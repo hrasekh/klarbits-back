@@ -31,6 +31,7 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
   def image
     {
       original: image_url,
+      large: large_url,
       medium: medium_url,
       thumbnail: thumbnail_url
     }
@@ -60,6 +61,10 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
 
   def medium_url
     variant_url(object.image.variant(resize_to_limit: [500, 500])) if object.image.attached?
+  end
+
+  def large_url
+    variant_url(object.image.variant(resize_to_limit: [900, 900])) if object.image.attached?
   end
 
   def variant_url(variant)
