@@ -1,7 +1,7 @@
 class Api::V1::QuestionSerializer < ActiveModel::Serializer
   include Rails.application.routes.url_helpers
   attributes :uuid, :title, :question, :translation, :next_question, :previous_question, :answers,
-             :statistic, :image_url
+             :statistic, :image
 
   def next_question
     serialize_question(next_question_object)
@@ -28,16 +28,12 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
     object.translated_question(Current.locale)
   end
 
-  def image_url
-    return unless object.image.attached?
-
-    if Rails.application.config.active_storage.service == :cloudflare
-      # For Cloudflare R2 with public access
-      object.image.url
-    else
-      # Fallback to signed URLs
-      rails_blob_url(object.image)
-    end
+  def image
+    {
+      original: image_url,
+      medium: medium_url,
+      thumbnail: thumbnail_url
+    }
   end
 
   private
@@ -53,4 +49,27 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
   def serialize_question(question)
     Api::V1::SimplifiedQuestionSerializer.new(question).as_json if question
   end
+
+  def image_url
+    variant_url(object.image) if object.image.attached?
+  end
+
+  def thumbnail_url
+    variant_url(object.image.variant(resize_to_limit: [100, 100])) if object.image.attached?
+  end
+
+  def medium_url
+    variant_url(object.image.variant(resize_to_limit: [500, 500])) if object.image.attached?
+  end
+
+  def variant_url(variant)
+    return nil unless variant
+
+    if Rails.application.config.active_storage.service == :cloudflare
+      variant.url
+    else
+      rails_representation_url(variant, host: Rails.application.routes.default_url_options[:host])
+    end
+  end
+
 end
