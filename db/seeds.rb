@@ -35,9 +35,9 @@ end
 puts "Data seeded, #{questions.count} has been created!"
 
 User.create!(
-  email: 'admin@example.com',
-  password: 'password',
-  password_confirmation: 'password',
+  email: ENV['ADMIN_EMIAL'],
+  password: ENV['ADMIN_PASSWORD'],
+  password_confirmation: ENV['ADMIN_PASSWORD'],
   role: :admin
-) unless User.exists?(email: 'admin@example.com')
+) unless User.exists?(email: ENV['ADMIN_EMAIL'])
 puts "User admin has been created!"

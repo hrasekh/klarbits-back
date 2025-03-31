@@ -21,12 +21,19 @@ services:
       - db
     environment:
       RAILS_MAX_THREADS: 5
-      DATABASE_URL:
       POSTGRES_PASSWORD:
+      DATABASE_URL:
+      CLOUDFLARE_R2_ENDPOINT:
+      CLOUDFLARE_R2_ACCESS_KEY_ID:
+      CLOUDFLARE_R2_SECRET_ACCESS_KEY:
+      CLOUDFLARE_R2_BUCKET:
+      ADMIN_EMIAL:
+      ADMIN_PASSWORD:
       DEVISE_JWT_SECRET_KEY:
       DOMAIN:
       DOMAIN_HOST:
       DOMAIN_PORT:
+
 
 volumes:
   postgres_data:
