@@ -33,6 +33,7 @@ services:
       DOMAIN:
       DOMAIN_HOST:
       DOMAIN_PORT:
+      SECRET_KEY_BASE:
       RAILS_ENV:
 
 
