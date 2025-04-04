@@ -14,10 +14,10 @@ cloudflare:
   region: auto
   bucket: <%= ENV["CLOUDFLARE_R2_BUCKET"] %>
   public: true 
-  upload:
-    max_file_size: 5.megabytes
-    max_files: 1
-    content_types: ["image/png", "image/jpeg", "image/gif", "image/webp", "image/svg+xml"]
+  # upload:
+  #   max_file_size: 5.megabytes
+  #   max_files: 1
+  #   content_types: ["image/png", "image/jpeg", "image/gif", "image/webp", "image/svg+xml"]
 
 
 
