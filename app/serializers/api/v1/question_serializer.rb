@@ -71,7 +71,7 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
     return nil unless variant
 
     if Rails.application.config.active_storage.service == :cloudflare
-      variant.url
+      variant.processed.url
     else
       rails_representation_url(variant, host: Rails.application.routes.default_url_options[:host])
     end
