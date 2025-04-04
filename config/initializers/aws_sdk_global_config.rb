@@ -1,4 +1,4 @@
-GNU nano 6.2                                                config/initializers/aws_sdk_global_config.rb                                                          
+# GNU nano 6.2                                                config/initializers/aws_sdk_global_config.rb                                                          
 # config/initializers/aws_sdk_global_config.rb
 require 'aws-sdk-s3'
 
