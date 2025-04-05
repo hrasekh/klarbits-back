@@ -12,7 +12,7 @@ module ActiveStorageUrlHelper
     private
     
     def cloudflare_url(record)
-      endpoint = ENV["CLOUDFLARE_R2_ENDPOINT"]
+      endpoint = ENV["CLOUDFLARE_R2_ENDPOINT_PUBLIC"]
       return nil unless endpoint
       endpoint = endpoint.chomp('/') # Remove trailing slash if present
       
