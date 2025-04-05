@@ -1,5 +1,9 @@
+require_relative '../../../helpers/active_storage_url_helper'
+
 class Api::V1::QuestionSerializer < ActiveModel::Serializer
   include Rails.application.routes.url_helpers
+  include ActiveStorageUrlHelper
+
   attributes :uuid, :title, :question, :translation, :next_question, :previous_question, :answers,
              :statistic, :image
 
@@ -65,16 +69,6 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
 
   def large_url
     variant_url(object.image.variant(resize_to_limit: [900, 900])) if object.image.attached?
-  end
-
-  def variant_url(variant)
-    return nil unless variant
-
-    if Rails.application.config.active_storage.service == :cloudflare
-      variant.processed.url
-    else
-      rails_representation_url(variant, host: Rails.application.routes.default_url_options[:host])
-    end
   end
 
 end
