@@ -3,57 +3,46 @@ module ActiveStorageUrlHelper
       return nil unless record
       
       if Rails.application.config.active_storage.service == :cloudflare
-        generate_cloudflare_url(record)
+        cloudflare_url(record)
       else
-        generate_standard_url(record)
+        standard_url(record)
       end
     end
     
     private
     
-    def generate_cloudflare_url(record)
-      endpoint = ENV["CLOUDFLARE_R2_ENDPOINT_PUBLIC"]&.chomp('/')
+    def cloudflare_url(record)
+      endpoint = ENV["CLOUDFLARE_R2_ENDPOINT"]
       return nil unless endpoint
+      endpoint = endpoint.chomp('/') # Remove trailing slash if present
       
-      key = extract_storage_key(record)
+      key = storage_key(record)
       return nil unless key
       
       "#{endpoint}/#{key}"
     end
     
-    def generate_standard_url(record)
+    def standard_url(record)
       host = Rails.application.routes.default_url_options[:host]
       return nil unless host
       
-      begin
-        rails_representation_url(record, host: host)
-      rescue => e
-        Rails.logger.error("URL generation error: #{e.message} for #{record.class}")
-        nil
-      end
+      rails_representation_url(record, host: host) rescue nil
     end
     
-    def extract_storage_key(record)
-      case
-      when record.respond_to?(:processed)
-        extract_variant_key(record)
-      when record.respond_to?(:key)
-        record.key
-      when record.respond_to?(:blob) && record.blob&.respond_to?(:key)
-        record.blob.key
-      else
-        Rails.logger.warn("Cannot extract key from #{record.class}")
-        nil
+    def storage_key(record)
+      # Direct key access is fastest
+      return record.key if record.respond_to?(:key)
+      
+      # For variants - make sure processed blob exists
+      if record.respond_to?(:processed) && record.processed.present?
+        return record.processed.key if record.processed.respond_to?(:key)
       end
-    end
-    
-    def extract_variant_key(variant)
-      begin
-        processed = variant.processed
-        processed.key if processed.respond_to?(:key)
-      rescue => e
-        Rails.logger.error("Variant processing error: #{e.message}")
-        nil
+      
+      # For attachments
+      if record.respond_to?(:blob) && record.blob
+        return record.blob.key
       end
+      
+      nil
     end
-end
+  end
