@@ -12,7 +12,7 @@ module ActiveStorageUrlHelper
     private
     
     def generate_cloudflare_url(record)
-      endpoint = ENV["CLOUDFLARE_R2_ENDPOINT"]&.chomp('/')
+      endpoint = ENV["CLOUDFLARE_R2_ENDPOINT_PUBLIC"]&.chomp('/')
       return nil unless endpoint
       
       key = extract_storage_key(record)
@@ -56,4 +56,4 @@ module ActiveStorageUrlHelper
         nil
       end
     end
-  end
+end
