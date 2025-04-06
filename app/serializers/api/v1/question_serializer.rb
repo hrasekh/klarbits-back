@@ -33,6 +33,7 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
   end
 
   def image
+    return unless object.image.attached?
     {
       original: image_url,
       large: large_url,
