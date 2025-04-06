@@ -22,7 +22,7 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
   end
 
   def statistic
-    current_position = category_questions.where('id <= ?', object.id).count
+    current_position = Category.where('id <= ?', object.id).count
     {
       total: object.category.questions.count,
       current: current_position
