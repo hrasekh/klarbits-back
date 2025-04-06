@@ -14,7 +14,6 @@ module ActiveStorageUrlHelper
     def cloudflare_url(record)
       endpoint = ENV["CLOUDFLARE_R2_ENDPOINT_PUBLIC"]
       return nil unless endpoint
-      endpoint = endpoint.chomp('/') # Remove trailing slash if present
       
       key = storage_key(record)
       return nil unless key
@@ -30,15 +29,11 @@ module ActiveStorageUrlHelper
     end
     
     def storage_key(record)
-      # Direct key access is fastest
-      return record.key if record.respond_to?(:key)
+      return record.key if record.respond_to?(:key) && record.key.present?
       
-      # For variants - make sure processed blob exists
-      if record.respond_to?(:processed) && record.processed.present?
-        return record.processed.key if record.processed.respond_to?(:key)
-      end
-      
-      # For attachments
+      record.processed if record.respond_to?(:processed)
+      return record.key if record.respond_to?(:key) && record.key.present?
+
       if record.respond_to?(:blob) && record.blob
         return record.blob.key
       end
