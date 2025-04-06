@@ -5,7 +5,7 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
   include ActiveStorageUrlHelper
 
   attributes :uuid, :title, :question, :translation, :next_question, :previous_question, :answers,
-             :statistic, :image
+             :statistic, :image, :locale
 
   def next_question
     serialize_question(next_question_object)
@@ -31,6 +31,11 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
   def translation
     object.translated_question(Current.locale)
   end
+
+  def locale
+    Current.locale || 'en'
+  end
+
 
   def image
     return unless object.image.attached?
