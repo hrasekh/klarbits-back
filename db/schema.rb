@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_03_30_200155) do
+ActiveRecord::Schema[7.2].define(version: 2025_04_11_180312) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -88,7 +88,11 @@ ActiveRecord::Schema[7.2].define(version: 2025_03_30_200155) do
     t.bigint "subcategory_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "is_conditional", default: false, null: false
+    t.integer "condition"
     t.index ["category_id"], name: "index_questions_on_category_id"
+    t.index ["condition"], name: "index_questions_on_condition", where: "(is_conditional = true)"
+    t.index ["is_conditional"], name: "index_questions_on_is_conditional"
     t.index ["subcategory_id"], name: "index_questions_on_subcategory_id"
     t.index ["uuid"], name: "index_questions_on_uuid", unique: true
   end

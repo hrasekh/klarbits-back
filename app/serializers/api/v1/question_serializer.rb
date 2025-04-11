@@ -23,7 +23,7 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
 
   def statistic
     category_questions = object.category.questions
-    current_position = category_questions.where('id <= ?', object.id).count
+    current_position = category_questions.where(id: ..object.id).count
     {
       total: object.category.questions.count,
       current: current_position
@@ -38,9 +38,9 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
     Current.locale || 'en'
   end
 
-
   def image
     return unless object.image.attached?
+
     {
       original: image_url,
       large: large_url,
@@ -78,5 +78,4 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
   def large_url
     variant_url(object.image.variant(resize_to_limit: [900, 900])) if object.image.attached?
   end
-
 end
