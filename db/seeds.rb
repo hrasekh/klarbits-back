@@ -20,7 +20,9 @@ questions.each do |q|
     question: q["question"],
     uuid: SecureRandom.uuid,
     category: citizenship_category,
-    subcategory: citizenship_all_subcategory
+    subcategory: citizenship_all_subcategory,
+    is_conditional: q["is_conditional"] || false,
+    condition: q["condition"] || nil,
   )
   q["translations"]&.each do |locale, content|
     QuestionTranslation.create!(question: question, locale: locale, content: content)

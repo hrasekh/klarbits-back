@@ -1,44 +1,51 @@
 # app/serializers/api/v1/question_meta_serializer.rb
 class Api::V1::QuestionMetaSerializer < ActiveModel::Serializer
-  attributes :statistic, :next_question, :previous_question, :locale
+  attributes :statistic, :next_question, :previous_question # Removed locale, assuming it comes from elsewhere if needed
 
-  def initialize(question)
-    super
+  def initialize(question, condition: nil)
+    super(question)
     @question = question
+    @condition = condition
   end
 
   def statistic
     {
-      total: @question.category.questions.count,
-      current: current_position
+      total: relevant_questions.count,
+      current: current_position_in_relevant_scope
     }
   end
 
   def next_question
-    serialize_question(next_question_object)
+    serialize_question(next_relevant_question_object)
   end
 
   def previous_question
-    serialize_question(previous_question_object)
+    serialize_question(previous_relevant_question_object)
   end
-
-  delegate :locale, to: :Current
 
   private
 
-  def current_position
-    @question.category.questions.where(id: ..@question.id).count
+  def relevant_questions
+    @relevant_questions ||= begin
+      scope = Question.base
+      scope = scope.or(Question.with_condition(@condition)) if @condition.present?
+      scope.order(:id)
+    end
   end
 
-  def next_question_object
-    @question.category.questions.where('id > ?', @question.id).order(id: :asc).first
+  def current_position_in_relevant_scope
+    relevant_questions.where(id: ..@question.id).count
   end
 
-  def previous_question_object
-    @question.category.questions.where(id: ...@question.id).order(id: :desc).first
+  def next_relevant_question_object
+    relevant_questions.where('id > ?', @question.id).first
+  end
+
+  def previous_relevant_question_object
+    relevant_questions.where(id: ...@question.id).last
   end
 
   def serialize_question(question)
-    question ? Api::V1::SimplifiedQuestionSerializer.new(question).as_json : nil
+    question&.then { |q| Api::V1::SimplifiedQuestionSerializer.new(q).as_json }
   end
 end

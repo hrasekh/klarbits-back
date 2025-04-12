@@ -21,8 +21,8 @@ class Question < ApplicationRecord
 
   scope :base, -> { where(is_conditional: false) }
   scope :conditional, -> { where(is_conditional: true) }
-  scope :with_condition_code, lambda { |conition_code|
-    conditional.where(condition: conition_code)
+  scope :with_condition_code, lambda { |condition_code|
+    conditional.where(condition: condition_code)
   }
 
   GERMAN_STATE_CODES = {
@@ -47,11 +47,11 @@ class Question < ApplicationRecord
   def state_symbol
     return nil unless is_conditional? && condition.present?
 
-    Question.german_state_codes.key(condition) # Find symbol by integer value
+    GERMAN_STATE_CODES.key(condition)
   end
 
   def state_symbol=(state_symbol)
-    int_code = Question.german_state_codes[state_symbol]
+    int_code = GERMAN_STATE_CODES[state_symbol]
     if int_code.present?
       self.is_conditional = true
       self.condition = int_code
@@ -97,7 +97,7 @@ class Question < ApplicationRecord
   def condition_code_is_valid_state
     return if condition.nil?
 
-    return if Question.german_state_codes.value?(condition)
+    return if GERMAN_STATE_CODES.value?(condition)
 
     errors.add(:condition, "'#{condition}' is not a valid German state code.")
   end
