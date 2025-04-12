@@ -5,10 +5,11 @@ class Api::V1::QuestionsController < ApplicationController
 
   def show
     condition = params[:condition]
+    locale = params[:locale] || 'en'
 
     render json: {
-      question: Api::V1::QuestionSerializer.new(@question).as_json,
-      meta: Api::V1::QuestionMetaSerializer.new(@question, condition:).as_json
+      question: Api::V1::QuestionSerializer.new(@question, locale:).as_json,
+      meta: Api::V1::QuestionMetaSerializer.new(@question, condition:, locale:).as_json
     }
   end
 

@@ -6,14 +6,19 @@ class Api::V1::QuestionSerializer < ActiveModel::Serializer
 
   attributes :uuid, :title, :question, :translation, :answers, :image
 
+  def initialize(object, locale: 'en')
+    super(object)
+    @locale = locale
+  end
+
   def answers
     object.answers.map do |answer|
-      Api::V1::AnswerSerializer.new(answer).as_json
+      Api::V1::AnswerSerializer.new(answer, locale: @locale).as_json
     end
   end
 
   def translation
-    object.translated_question(Current.locale)
+    object.translated_question(@locale)
   end
 
   def image
