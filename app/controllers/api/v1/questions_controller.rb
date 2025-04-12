@@ -4,7 +4,10 @@ class Api::V1::QuestionsController < ApplicationController
   before_action :load_question, only: %i[show update]
 
   def show
-    render json: @question, locale: params[:locale]
+    render json: {
+      question: Api::V1::QuestionSerializer.new(@question).as_json,
+      meta: Api::V1::QuestionMetaSerializer.new(@question).as_json
+    }
   end
 
   def update
