@@ -1,6 +1,6 @@
 # app/serializers/api/v1/question_meta_serializer.rb
 class Api::V1::QuestionMetaSerializer < ActiveModel::Serializer
-  attributes :statistic, :next_question, :previous_question # Removed locale, assuming it comes from elsewhere if needed
+  attributes :statistic, :next_question, :previous_question
 
   def initialize(question, condition: nil)
     super(question)
