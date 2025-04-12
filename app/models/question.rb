@@ -21,7 +21,7 @@ class Question < ApplicationRecord
 
   scope :base, -> { where(is_conditional: false) }
   scope :conditional, -> { where(is_conditional: true) }
-  scope :with_condition_code, lambda { |condition_code|
+  scope :with_condition, lambda { |condition_code|
     conditional.where(condition: condition_code)
   }
 

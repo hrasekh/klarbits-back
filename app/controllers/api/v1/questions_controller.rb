@@ -4,11 +4,11 @@ class Api::V1::QuestionsController < ApplicationController
   before_action :load_question, only: %i[show update]
 
   def show
-    condition_code = params[:condition]
+    condition = params[:condition]
 
     render json: {
       question: Api::V1::QuestionSerializer.new(@question).as_json,
-      meta: Api::V1::QuestionMetaSerializer.new(@question, condition_code:).as_json
+      meta: Api::V1::QuestionMetaSerializer.new(@question, condition:).as_json
     }
   end
 
