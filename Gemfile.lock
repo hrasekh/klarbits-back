@@ -310,6 +310,7 @@ GEM
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
     useragent (0.16.11)
+    uuidtools (3.0.0)
     warden (1.2.9)
       rack (>= 2.0.9)
     warden-jwt_auth (0.11.0)
@@ -353,6 +354,7 @@ DEPENDENCIES
   rubocop-rails-omakase
   rubocop-rake
   tzinfo-data
+  uuidtools
 
 BUNDLED WITH
    2.5.22

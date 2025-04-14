@@ -1,6 +1,8 @@
 # app/serializers/api/v1/question_meta_serializer.rb
 class Api::V1::QuestionMetaSerializer < ActiveModel::Serializer
-  attributes :statistic, :next_question, :previous_question, :locale 
+  attributes :statistic, :next_question, :previous_question, :locale
+
+  attr_reader :locale
 
   def initialize(question, condition: nil, locale: 'en')
     super(question)
@@ -22,10 +24,6 @@ class Api::V1::QuestionMetaSerializer < ActiveModel::Serializer
 
   def previous_question
     serialize_question(previous_relevant_question_object)
-  end
-
-  def locale
-    @locale
   end
 
   private
@@ -53,5 +51,4 @@ class Api::V1::QuestionMetaSerializer < ActiveModel::Serializer
   def serialize_question(question)
     question&.then { |q| Api::V1::SimplifiedQuestionSerializer.new(q).as_json }
   end
-
 end
